@@ -1,0 +1,142 @@
+[
+  {
+    "id": "test_001",
+    "question": "What steering problems affect 2022-2025 Honda Civics?",
+    "expected_document": "honda_civic_2022_to_2025_safety_recall_report.pdf",
+    "category": "recall",
+    "difficulty": "easy"
+  },
+  {
+    "id": "test_002",
+    "question": "What is the engine oil capacity for a 2022 Honda Civic?",
+    "expected_document": "honda_civic_2022_manual.pdf",
+    "category": "specification",
+    "difficulty": "easy"
+  },
+  {
+    "id": "test_003",
+    "question": "What is the recommended tire pressure for a 2022 Honda Civic?",
+    "expected_document": "honda_civic_2022_manual.pdf",
+    "category": "specification",
+    "difficulty": "easy"
+  },
+  {
+    "id": "test_004",
+    "question": "How often should engine oil be changed in a 2022 Honda Civic?",
+    "expected_document": "honda_civic_2022_manual.pdf",
+    "category": "maintenance",
+    "difficulty": "easy"
+  },
+  {
+    "id": "test_005",
+    "question": "What part numbers are involved in the Honda Civic steering recall?",
+    "expected_document": "honda_civic_2022_to_2025_safety_recall_report.pdf",
+    "category": "recall",
+    "difficulty": "medium"
+  },
+  {
+    "id": "test_006",
+    "question": "What is the towing capacity of a 2021 Ford F-150?",
+    "expected_document": "ford_f150_2021_manual.pdf",
+    "category": "specification",
+    "difficulty": "easy"
+  },
+  {
+    "id": "test_007",
+    "question": "What type of engine oil does the 2021 Ford F-150 require?",
+    "expected_document": "ford_f150_2021_manual.pdf",
+    "category": "specification",
+    "difficulty": "easy"
+  },
+  {
+    "id": "test_008",
+    "question": "What is the fuel tank capacity of a 2021 Ford F-150?",
+    "expected_document": "ford_f150_2021_manual.pdf",
+    "category": "specification",
+    "difficulty": "easy"
+  },
+  {
+    "id": "test_009",
+    "question": "What safety features does the 2021 Ford F-150 have?",
+    "expected_document": "ford_f150_2021_manual.pdf",
+    "category": "features",
+    "difficulty": "medium"
+  },
+  {
+    "id": "test_010",
+    "question": "What is the engine oil capacity for a 2023 Toyota Camry?",
+    "expected_document": "toyota_camry_2023_manual.pdf",
+    "category": "specification",
+    "difficulty": "easy"
+  },
+  {
+    "id": "test_011",
+    "question": "What type of transmission fluid does the 2023 Toyota Camry use?",
+    "expected_document": "toyota_camry_2023_manual.pdf",
+    "category": "specification",
+    "difficulty": "easy"
+  },
+  {
+    "id": "test_012",
+    "question": "What is the maintenance schedule for a 2023 Toyota Camry?",
+    "expected_document": "toyota_camry_2023_manual.pdf",
+    "category": "maintenance",
+    "difficulty": "medium"
+  },
+  {
+    "id": "test_013",
+    "question": "What is the battery capacity of a Tesla Model 3?",
+    "expected_document": "tesla_model3_2023_manual.pdf",
+    "category": "specification",
+    "difficulty": "easy"
+  },
+  {
+    "id": "test_014",
+    "question": "What is the maximum charging rate for a Tesla Model 3?",
+    "expected_document": "tesla_model3_2023_manual.pdf",
+    "category": "specification",
+    "difficulty": "easy"
+  },
+  {
+    "id": "test_015",
+    "question": "How do you activate Autopilot on a Tesla Model 3?",
+    "expected_document": "tesla_model3_2023_manual.pdf",
+    "category": "procedure",
+    "difficulty": "medium"
+  },
+  {
+    "id": "test_016",
+    "question": "What is the range of a Tesla Model 3 on a full charge?",
+    "expected_document": "tesla_model3_2023_manual.pdf",
+    "category": "specification",
+    "difficulty": "easy"
+  },
+  {
+    "id": "test_017",
+    "question": "Compare the oil capacity between Honda Civic and Toyota Camry",
+    "expected_document": "multiple",
+    "category": "comparison",
+    "difficulty": "hard"
+  },
+  {
+    "id": "test_018",
+    "question": "What are the warning signs of the Honda Civic steering defect?",
+    "expected_document": "honda_civic_2022_to_2025_safety_recall_report.pdf",
+    "category": "recall",
+    "difficulty": "medium"
+  },
+  {
+    "id": "test_019",
+    "question": "Which vehicles use synthetic oil?",
+    "expected_document": "multiple",
+    "category": "specification",
+    "difficulty": "medium"
+  },
+  {
+    "id": "test_020",
+    "question": "How many vehicles are affected by the Honda Civic steering recall?",
+    "expected_document": "honda_civic_2022_to_2025_safety_recall_report.pdf",
+    "category": "recall",
+    "difficulty": "easy"
+  }
+]

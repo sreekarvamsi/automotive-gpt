@@ -1,0 +1,10 @@
+venv/
+.env
+__pycache__/
+__pycache__/
+*.pyc
+.pytest_cache/
+test_results/results_20260202_151410.json test_results/results_20260202_173943.json
+data/ford_f150_2021_manual.pdf data/honda_civic_2022_manual.pdf data/honda_civic_2022_to_2025_safety_recall_report.pdf data/tesla_model3_2023_manual.pdf data/toyota_camry_2023_manual.pdf
+.DS_Store
+*.log

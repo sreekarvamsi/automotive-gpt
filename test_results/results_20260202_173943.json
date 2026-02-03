@@ -1,0 +1,932 @@
+{
+  "timestamp": "2026-02-02T17:44:45.676285",
+  "summary": {
+    "total_queries": 20,
+    "successful_queries": 18,
+    "success_rate": 0.9,
+    "document_retrieval_accuracy": 0.85,
+    "citation_rate": 0.9,
+    "answer_generation_rate": 0.9,
+    "acceptable_latency_rate": 0.9,
+    "avg_latency_seconds": 8.836751169628567,
+    "p95_latency_seconds": 21.292505025863647,
+    "avg_confidence": 0.6555000000000001
+  },
+  "category_breakdown": {
+    "recall": {
+      "total": 4,
+      "success": 3,
+      "correct_doc": 3
+    },
+    "specification": {
+      "total": 11,
+      "success": 11,
+      "correct_doc": 10
+    },
+    "maintenance": {
+      "total": 2,
+      "success": 1,
+      "correct_doc": 1
+    },
+    "features": {
+      "total": 1,
+      "success": 1,
+      "correct_doc": 1
+    },
+    "procedure": {
+      "total": 1,
+      "success": 1,
+      "correct_doc": 1
+    },
+    "comparison": {
+      "total": 1,
+      "success": 1,
+      "correct_doc": 1
+    }
+  },
+  "detailed_results": [
+    {
+      "test_case": {
+        "id": "test_001",
+        "question": "What steering problems affect 2022-2025 Honda Civics?",
+        "expected_document": "honda_civic_2022_to_2025_safety_recall_report.pdf",
+        "category": "recall",
+        "difficulty": "easy"
+      },
+      "result": {
+        "success": true,
+        "latency": 2.218362808227539,
+        "answer": "The 2022-2025 Honda Civics are affected by an issue involving the steering gear box assembly, specifically the deformation of the worm wheel teeth. This defect can cause sticky steering, which was first reported in a confirmed complaint on September 9, 2021. The issue was significant enough to prompt an investigation by the National Highway Traffic Safety Administration (NHTSA), which began with a Preliminary Evaluation and was later upgraded to an Engineering Analysis to further investigate the reports of sticky steering. The problem with the steering gear box assembly was linked to the manufacturing process of the worm wheel, which was later revised to address the deformation issue [Source 3, Page 6].",
+        "sources": [
+          {
+            "source_id": 1,
+            "source_file": "honda_civic_2022_to_2025_safety_recall_report.pdf",
+            "page": 1,
+            "section_type": "paragraph",
+            "score": 0.861
+          },
+          {
+            "source_id": 2,
+            "source_file": "honda_civic_2022_to_2025_safety_recall_report.pdf",
+            "page": 2,
+            "section_type": "paragraph",
+            "score": 0.643
+          },
+          {
+            "source_id": 3,
+            "source_file": "honda_civic_2022_to_2025_safety_recall_report.pdf",
+            "page": 6,
+            "section_type": "paragraph",
+            "score": 0.318
+          }
+        ],
+        "confidence": 0.607,
+        "error": null
+      },
+      "scores": {
+        "retrieved_correct_document": true,
+        "has_citation": true,
+        "has_answer": true,
+        "latency_acceptable": true,
+        "answer_not_hallucinated": true
+      }
+    },
+    {
+      "test_case": {
+        "id": "test_002",
+        "question": "What is the engine oil capacity for a 2022 Honda Civic?",
+        "expected_document": "honda_civic_2022_manual.pdf",
+        "category": "specification",
+        "difficulty": "easy"
+      },
+      "result": {
+        "success": true,
+        "latency": 2.1194212436676025,
+        "answer": "The engine oil capacity for a 2022 Honda Civic is as follows:\n\n- **Capacity Change:** 4.2 US quarts (4.0 L)\n- **Change including filter:** 4.4 US quarts (4.2 L)\n\n[Source 3, Page 755]",
+        "sources": [
+          {
+            "source_id": 1,
+            "source_file": "ford_f150_2021_manual.pdf",
+            "page": 596,
+            "section_type": "paragraph",
+            "score": 0.346
+          },
+          {
+            "source_id": 2,
+            "source_file": "ford_f150_2021_manual.pdf",
+            "page": 594,
+            "section_type": "paragraph",
+            "score": 0.337
+          },
+          {
+            "source_id": 3,
+            "source_file": "honda_civic_2022_manual.pdf",
+            "page": 755,
+            "section_type": "paragraph",
+            "score": 0.296
+          }
+        ],
+        "confidence": 0.326,
+        "error": null
+      },
+      "scores": {
+        "retrieved_correct_document": true,
+        "has_citation": true,
+        "has_answer": true,
+        "latency_acceptable": true,
+        "answer_not_hallucinated": true
+      }
+    },
+    {
+      "test_case": {
+        "id": "test_003",
+        "question": "What is the recommended tire pressure for a 2022 Honda Civic?",
+        "expected_document": "honda_civic_2022_manual.pdf",
+        "category": "specification",
+        "difficulty": "easy"
+      },
+      "result": {
+        "success": true,
+        "latency": 2.1284868717193604,
+        "answer": "The provided context does not contain specific information about the recommended tire pressure for a 2022 Honda Civic. Please refer to the vehicle's owner's manual or the tire information placard located on the vehicle for accurate tire pressure details.",
+        "sources": [
+          {
+            "source_id": 1,
+            "source_file": "toyota_camry_2023_manual.pdf",
+            "page": 586,
+            "section_type": "paragraph",
+            "score": 0.033
+          },
+          {
+            "source_id": 2,
+            "source_file": "honda_civic_2022_manual.pdf",
+            "page": 775,
+            "section_type": "paragraph",
+            "score": 0.007
+          },
+          {
+            "source_id": 3,
+            "source_file": "ford_f150_2021_manual.pdf",
+            "page": 555,
+            "section_type": "paragraph",
+            "score": 0.004
+          }
+        ],
+        "confidence": 0.015,
+        "error": null
+      },
+      "scores": {
+        "retrieved_correct_document": true,
+        "has_citation": true,
+        "has_answer": true,
+        "latency_acceptable": true,
+        "answer_not_hallucinated": true
+      }
+    },
+    {
+      "test_case": {
+        "id": "test_004",
+        "question": "How often should engine oil be changed in a 2022 Honda Civic?",
+        "expected_document": "honda_civic_2022_manual.pdf",
+        "category": "maintenance",
+        "difficulty": "easy"
+      },
+      "result": {
+        "success": false,
+        "latency": 62.058584213256836,
+        "answer": null,
+        "sources": [],
+        "confidence": 0,
+        "error": "HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=60)"
+      },
+      "scores": {
+        "retrieved_correct_document": false,
+        "has_citation": false,
+        "has_answer": false,
+        "latency_acceptable": false,
+        "answer_not_hallucinated": true
+      }
+    },
+    {
+      "test_case": {
+        "id": "test_005",
+        "question": "What part numbers are involved in the Honda Civic steering recall?",
+        "expected_document": "honda_civic_2022_to_2025_safety_recall_report.pdf",
+        "category": "recall",
+        "difficulty": "medium"
+      },
+      "result": {
+        "success": false,
+        "latency": 62.0619580745697,
+        "answer": null,
+        "sources": [],
+        "confidence": 0,
+        "error": "HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=60)"
+      },
+      "scores": {
+        "retrieved_correct_document": false,
+        "has_citation": false,
+        "has_answer": false,
+        "latency_acceptable": false,
+        "answer_not_hallucinated": true
+      }
+    },
+    {
+      "test_case": {
+        "id": "test_006",
+        "question": "What is the towing capacity of a 2021 Ford F-150?",
+        "expected_document": "ford_f150_2021_manual.pdf",
+        "category": "specification",
+        "difficulty": "easy"
+      },
+      "result": {
+        "success": true,
+        "latency": 21.292505025863647,
+        "answer": "To determine the towing capacity of a 2021 Ford F-150, you need to calculate the maximum loaded trailer weight for your specific vehicle configuration. Here are the steps to follow:\n\n1. Start with the Gross Combined Weight Rating (GCWR) for your vehicle model and axle ratio. This information can be found in the vehicle's manual or by consulting an authorized dealer.\n2. Subtract the following weights from the GCWR to find the maximum loaded trailer weight:\n   - Vehicle curb weight.\n   - Hitch hardware weight (e.g., draw bar, ball, locks, or weight distributing hardware).\n   - Driver weight.\n   - Passenger weight.\n   - Payload, cargo, and luggage weight.\n   - Aftermarket equipment weight.\n\nThe result from these calculations will give you the maximum loaded trailer weight that your 2021 Ford F-150 can tow. Note that the trailer tongue load should be considered part of the vehicle's payload and should be subtracted from the total payload.\n\nFor specific towing capacity values and additional guidance, refer to the RV and Trailer Towing Guide available online at Ford's official fleet website or consult an authorized Ford dealer [Source 1, Page 433; Source 2, Page 417].",
+        "sources": [
+          {
+            "source_id": 1,
+            "source_file": "ford_f150_2021_manual.pdf",
+            "page": 433,
+            "section_type": "paragraph",
+            "score": 0.963
+          },
+          {
+            "source_id": 2,
+            "source_file": "ford_f150_2021_manual.pdf",
+            "page": 417,
+            "section_type": "paragraph",
+            "score": 0.841
+          },
+          {
+            "source_id": 3,
+            "source_file": "ford_f150_2021_manual.pdf",
+            "page": 430,
+            "section_type": "paragraph",
+            "score": 0.781
+          }
+        ],
+        "confidence": 0.862,
+        "error": null
+      },
+      "scores": {
+        "retrieved_correct_document": true,
+        "has_citation": true,
+        "has_answer": true,
+        "latency_acceptable": true,
+        "answer_not_hallucinated": true
+      }
+    },
+    {
+      "test_case": {
+        "id": "test_007",
+        "question": "What type of engine oil does the 2021 Ford F-150 require?",
+        "expected_document": "ford_f150_2021_manual.pdf",
+        "category": "specification",
+        "difficulty": "easy"
+      },
+      "result": {
+        "success": true,
+        "latency": 18.93037438392639,
+        "answer": "The 2021 Ford F-150 requires different types of engine oils depending on the engine variant:\n\n1. **For the 5.0L engine:**\n   - Recommended oil: Motorcraft\u00ae SAE 5W-30 Synthetic Blend Motor Oil.\n   - Specification: WSS-M2C961-A1.\n   - In extremely cold climates (below -22.0\u00b0F or -30\u00b0C), use SAE 0W-30 Synthetic Blend, specification WSS-M2C963-A1 [Source 1, Page 596].\n\n2. **For the 3.5L Hybrid Electric Vehicle (HEV):**\n   - Recommended oil: Motorcraft\u00ae SAE 5W-30 Synthetic Blend Motor Oil.\n   - Specification: WSS-M2C961-A1.\n   - In extremely cold climates (below -22.0\u00b0F or -30\u00b0C), use SAE 0W-30 Synthetic Blend, specification WSS-M2C963-A1 [Source 2, Page 594].\n\n3. **For the 3.5L EcoBoost\u2122:**\n   - Recommended oil: Motorcraft\u00ae SAE 5W-20 Synthetic Blend Motor Oil.\n   - Specification: WSS-M2C960-A1.\n   - In extremely cold climates (below -22.0\u00b0F or -30\u00b0C), use SAE 0W-20 Synthetic Blend, specification WSS-M2C962-A1 [Source 3, Page 591].\n\nFor all variants, it is recommended to use oils that meet API SP requirements and display the API Certification Mark for gasoline engines. The use of supplemental engine oil additives is not recommended as they are unnecessary and could lead to engine damage not covered by the vehicle warranty.",
+        "sources": [
+          {
+            "source_id": 1,
+            "source_file": "ford_f150_2021_manual.pdf",
+            "page": 596,
+            "section_type": "paragraph",
+            "score": 0.976
+          },
+          {
+            "source_id": 2,
+            "source_file": "ford_f150_2021_manual.pdf",
+            "page": 594,
+            "section_type": "paragraph",
+            "score": 0.973
+          },
+          {
+            "source_id": 3,
+            "source_file": "ford_f150_2021_manual.pdf",
+            "page": 591,
+            "section_type": "paragraph",
+            "score": 0.961
+          }
+        ],
+        "confidence": 0.97,
+        "error": null
+      },
+      "scores": {
+        "retrieved_correct_document": true,
+        "has_citation": true,
+        "has_answer": true,
+        "latency_acceptable": true,
+        "answer_not_hallucinated": true
+      }
+    },
+    {
+      "test_case": {
+        "id": "test_008",
+        "question": "What is the fuel tank capacity of a 2021 Ford F-150?",
+        "expected_document": "ford_f150_2021_manual.pdf",
+        "category": "specification",
+        "difficulty": "easy"
+      },
+      "result": {
+        "success": true,
+        "latency": 10.569866418838501,
+        "answer": "The fuel tank capacity for the 2021 Ford F-150 varies depending on whether the vehicle is a Hybrid Electric Vehicle (HEV) or not:\n\n1. **Hybrid Electric Vehicle (HEV)**: The advertised capacity includes an empty reserve, but the exact total capacity is not specified in the provided context [Source 1, Page 272].\n2. **Non-Hybrid Electric Vehicle**: The advertised capacity includes an empty reserve, but again, the exact total capacity is not specified in the provided context [Source 2, Page 271].\n\nUnfortunately, the exact numerical values for the fuel tank capacities are not provided in the sources available. For precise capacity, you may need to refer to additional sections of the vehicle's manual or contact a Ford dealer.",
+        "sources": [
+          {
+            "source_id": 1,
+            "source_file": "ford_f150_2021_manual.pdf",
+            "page": 272,
+            "section_type": "paragraph",
+            "score": 0.996
+          },
+          {
+            "source_id": 2,
+            "source_file": "ford_f150_2021_manual.pdf",
+            "page": 271,
+            "section_type": "paragraph",
+            "score": 0.994
+          },
+          {
+            "source_id": 3,
+            "source_file": "ford_f150_2021_manual.pdf",
+            "page": 596,
+            "section_type": "paragraph",
+            "score": 0.948
+          }
+        ],
+        "confidence": 0.979,
+        "error": null
+      },
+      "scores": {
+        "retrieved_correct_document": true,
+        "has_citation": true,
+        "has_answer": true,
+        "latency_acceptable": true,
+        "answer_not_hallucinated": true
+      }
+    },
+    {
+      "test_case": {
+        "id": "test_009",
+        "question": "What safety features does the 2021 Ford F-150 have?",
+        "expected_document": "ford_f150_2021_manual.pdf",
+        "category": "features",
+        "difficulty": "medium"
+      },
+      "result": {
+        "success": true,
+        "latency": 13.548660039901733,
+        "answer": "The 2021 Ford F-150 is equipped with several safety features, including:\n\n1. **Personal Safety System\u2122**: This advanced safety system is designed to protect occupants in frontal crashes. It includes:\n   - Dual-stage airbag supplemental restraints for the driver and passenger.\n   - Front seat outermost seatbelts with pretensioners, energy management retractors, and seatbelt usage sensors.\n   - A front passenger sensing system.\n   - Passenger airbag off and on indicators.\n   - Front crash severity sensors.\n   - A restraints control module with impact and safing sensors.\n   - Restraint system warning light and tone.\n   - Electrical wiring for the airbags, crash sensors, seatbelt pretensioners, front seatbelt usage sensors, front passenger sensing system, and indicator lights [Source 3, Page 75].\n\n2. **California Proposition 65 Warnings**: These include warnings about exposure to chemicals such as engine exhaust, carbon monoxide, phthalates, and lead, which are known to cause cancer and reproductive harm. Specific precautions are recommended to minimize exposure, such as servicing the vehicle in a well-ventilated area and wearing gloves or washing hands frequently when servicing the vehicle [Source 1, Page 1].\n\nThese features and warnings highlight the vehicle's focus on occupant safety and health precautions related to vehicle maintenance and operation.",
+        "sources": [
+          {
+            "source_id": 1,
+            "source_file": "ford_f150_2021_manual.pdf",
+            "page": 1,
+            "section_type": "paragraph",
+            "score": 0.924
+          },
+          {
+            "source_id": 2,
+            "source_file": "ford_f150_2021_manual.pdf",
+            "page": 37,
+            "section_type": "paragraph",
+            "score": 0.801
+          },
+          {
+            "source_id": 3,
+            "source_file": "ford_f150_2021_manual.pdf",
+            "page": 75,
+            "section_type": "paragraph",
+            "score": 0.715
+          }
+        ],
+        "confidence": 0.813,
+        "error": null
+      },
+      "scores": {
+        "retrieved_correct_document": true,
+        "has_citation": true,
+        "has_answer": true,
+        "latency_acceptable": true,
+        "answer_not_hallucinated": true
+      }
+    },
+    {
+      "test_case": {
+        "id": "test_010",
+        "question": "What is the engine oil capacity for a 2023 Toyota Camry?",
+        "expected_document": "toyota_camry_2023_manual.pdf",
+        "category": "specification",
+        "difficulty": "easy"
+      },
+      "result": {
+        "success": true,
+        "latency": 8.419848203659058,
+        "answer": "The engine oil capacity for the 2023 Toyota Camry varies depending on the engine type:\n\n- **2.5 L 4-cylinder (A25A-FKS) engine:**\n  - **With filter:** 4.8 quarts (4.5 L, 4.0 Imperial quarts)\n  - **Without filter:** 4.4 quarts (4.2 L, 3.7 Imperial quarts)\n\n- **3.5 L V6 (2GR-FKS) engine:**\n  - **With filter:** 5.7 quarts (5.4 L, 4.8 Imperial quarts)\n  - **Without filter:** 5.6 quarts (5.3 L, 4.7 Imperial quarts)\n\n[Source 1, Page 578]",
+        "sources": [
+          {
+            "source_id": 1,
+            "source_file": "toyota_camry_2023_manual.pdf",
+            "page": 578,
+            "section_type": "paragraph",
+            "score": 0.977
+          },
+          {
+            "source_id": 2,
+            "source_file": "toyota_camry_2023_manual.pdf",
+            "page": 580,
+            "section_type": "paragraph",
+            "score": 0.758
+          },
+          {
+            "source_id": 3,
+            "source_file": "toyota_camry_2023_manual.pdf",
+            "page": 582,
+            "section_type": "paragraph",
+            "score": 0.757
+          }
+        ],
+        "confidence": 0.831,
+        "error": null
+      },
+      "scores": {
+        "retrieved_correct_document": true,
+        "has_citation": true,
+        "has_answer": true,
+        "latency_acceptable": true,
+        "answer_not_hallucinated": true
+      }
+    },
+    {
+      "test_case": {
+        "id": "test_011",
+        "question": "What type of transmission fluid does the 2023 Toyota Camry use?",
+        "expected_document": "toyota_camry_2023_manual.pdf",
+        "category": "specification",
+        "difficulty": "easy"
+      },
+      "result": {
+        "success": true,
+        "latency": 6.049065351486206,
+        "answer": "The 2023 Toyota Camry uses Toyota Genuine ATF WS as the transmission fluid. It is important to use this specified fluid type as using other types may cause abnormal noise or vibration, or damage the transmission of the vehicle [Source 1, Page 580].",
+        "sources": [
+          {
+            "source_id": 1,
+            "source_file": "toyota_camry_2023_manual.pdf",
+            "page": 580,
+            "section_type": "paragraph",
+            "score": 0.415
+          },
+          {
+            "source_id": 2,
+            "source_file": "toyota_camry_2023_manual.pdf",
+            "page": 582,
+            "section_type": "paragraph",
+            "score": 0.186
+          },
+          {
+            "source_id": 3,
+            "source_file": "toyota_camry_2023_manual.pdf",
+            "page": 579,
+            "section_type": "paragraph",
+            "score": 0.055
+          }
+        ],
+        "confidence": 0.219,
+        "error": null
+      },
+      "scores": {
+        "retrieved_correct_document": true,
+        "has_citation": true,
+        "has_answer": true,
+        "latency_acceptable": true,
+        "answer_not_hallucinated": true
+      }
+    },
+    {
+      "test_case": {
+        "id": "test_012",
+        "question": "What is the maintenance schedule for a 2023 Toyota Camry?",
+        "expected_document": "toyota_camry_2023_manual.pdf",
+        "category": "maintenance",
+        "difficulty": "medium"
+      },
+      "result": {
+        "success": true,
+        "latency": 6.7800209522247314,
+        "answer": "The maintenance schedule for the 2023 Toyota Camry is detailed in the separate \"Scheduled Maintenance Guide\" or \"Owner\u2019s Manual Supplement.\" Specific maintenance intervals based on driven distance are outlined in these documents. For exact details on what maintenance tasks need to be performed and when, you should refer to these guides [Source 2, Page 542].",
+        "sources": [
+          {
+            "source_id": 1,
+            "source_file": "toyota_camry_2023_manual.pdf",
+            "page": 447,
+            "section_type": "paragraph",
+            "score": 0.852
+          },
+          {
+            "source_id": 2,
+            "source_file": "toyota_camry_2023_manual.pdf",
+            "page": 542,
+            "section_type": "paragraph",
+            "score": 0.849
+          },
+          {
+            "source_id": 3,
+            "source_file": "toyota_camry_2023_manual.pdf",
+            "page": 448,
+            "section_type": "paragraph",
+            "score": 0.844
+          }
+        ],
+        "confidence": 0.848,
+        "error": null
+      },
+      "scores": {
+        "retrieved_correct_document": true,
+        "has_citation": true,
+        "has_answer": true,
+        "latency_acceptable": true,
+        "answer_not_hallucinated": true
+      }
+    },
+    {
+      "test_case": {
+        "id": "test_013",
+        "question": "What is the battery capacity of a Tesla Model 3?",
+        "expected_document": "tesla_model3_2023_manual.pdf",
+        "category": "specification",
+        "difficulty": "easy"
+      },
+      "result": {
+        "success": true,
+        "latency": 6.283399343490601,
+        "answer": "The provided context does not contain information regarding the battery capacity of a Tesla Model 3. Please refer to the appropriate section of the vehicle's manual or other official Tesla documentation for specific details on battery capacity.",
+        "sources": [
+          {
+            "source_id": 1,
+            "source_file": "tesla_model3_2023_manual.pdf",
+            "page": 193,
+            "section_type": "paragraph",
+            "score": 0.655
+          },
+          {
+            "source_id": 2,
+            "source_file": "tesla_model3_2023_manual.pdf",
+            "page": 193,
+            "section_type": "paragraph",
+            "score": 0.586
+          },
+          {
+            "source_id": 3,
+            "source_file": "tesla_model3_2023_manual.pdf",
+            "page": 218,
+            "section_type": "paragraph",
+            "score": 0.413
+          }
+        ],
+        "confidence": 0.552,
+        "error": null
+      },
+      "scores": {
+        "retrieved_correct_document": true,
+        "has_citation": true,
+        "has_answer": true,
+        "latency_acceptable": true,
+        "answer_not_hallucinated": true
+      }
+    },
+    {
+      "test_case": {
+        "id": "test_014",
+        "question": "What is the maximum charging rate for a Tesla Model 3?",
+        "expected_document": "tesla_model3_2023_manual.pdf",
+        "category": "specification",
+        "difficulty": "easy"
+      },
+      "result": {
+        "success": true,
+        "latency": 5.953330755233765,
+        "answer": "The provided context does not specify the maximum charging rate for a Tesla Model 3. It discusses various aspects of charging and battery care, but does not provide a specific figure for the maximum charging rate. For detailed information on the maximum charging rate, you may need to refer to other sections of the Tesla Model 3 manual or contact Tesla directly.",
+        "sources": [
+          {
+            "source_id": 1,
+            "source_file": "tesla_model3_2023_manual.pdf",
+            "page": 181,
+            "section_type": "paragraph",
+            "score": 0.995
+          },
+          {
+            "source_id": 2,
+            "source_file": "tesla_model3_2023_manual.pdf",
+            "page": 184,
+            "section_type": "list",
+            "score": 0.859
+          },
+          {
+            "source_id": 3,
+            "source_file": "tesla_model3_2023_manual.pdf",
+            "page": 291,
+            "section_type": "paragraph",
+            "score": 0.293
+          }
+        ],
+        "confidence": 0.716,
+        "error": null
+      },
+      "scores": {
+        "retrieved_correct_document": true,
+        "has_citation": true,
+        "has_answer": true,
+        "latency_acceptable": true,
+        "answer_not_hallucinated": true
+      }
+    },
+    {
+      "test_case": {
+        "id": "test_015",
+        "question": "How do you activate Autopilot on a Tesla Model 3?",
+        "expected_document": "tesla_model3_2023_manual.pdf",
+        "category": "procedure",
+        "difficulty": "medium"
+      },
+      "result": {
+        "success": true,
+        "latency": 7.999509334564209,
+        "answer": "To activate Autopilot on a Tesla Model 3, you can use the right scroll button on the steering wheel. Depending on how you have configured the Autopilot settings, you can engage both Traffic-Aware Cruise Control and Autosteer by either a single or double press of the right scroll button:\n\n- **Single Click**: If set to Single Click, both Traffic-Aware Cruise Control and Autosteer engage when you single-press the right scroll button.\n- **Double Click**: If set to Double Click, you must double-press the right scroll button to engage Autosteer.\n\nBefore using Autopilot features, ensure that they are properly set up by navigating to Controls > Autopilot on the vehicle's touchscreen. [Source 1, Page 107]",
+        "sources": [
+          {
+            "source_id": 1,
+            "source_file": "tesla_model3_2023_manual.pdf",
+            "page": 107,
+            "section_type": "paragraph",
+            "score": 0.998
+          },
+          {
+            "source_id": 2,
+            "source_file": "tesla_model3_2023_manual.pdf",
+            "page": 123,
+            "section_type": "paragraph",
+            "score": 0.998
+          },
+          {
+            "source_id": 3,
+            "source_file": "tesla_model3_2023_manual.pdf",
+            "page": 104,
+            "section_type": "paragraph",
+            "score": 0.997
+          }
+        ],
+        "confidence": 0.998,
+        "error": null
+      },
+      "scores": {
+        "retrieved_correct_document": true,
+        "has_citation": true,
+        "has_answer": true,
+        "latency_acceptable": true,
+        "answer_not_hallucinated": true
+      }
+    },
+    {
+      "test_case": {
+        "id": "test_016",
+        "question": "What is the range of a Tesla Model 3 on a full charge?",
+        "expected_document": "tesla_model3_2023_manual.pdf",
+        "category": "specification",
+        "difficulty": "easy"
+      },
+      "result": {
+        "success": true,
+        "latency": 10.057047128677368,
+        "answer": "The provided context does not contain specific information about the exact range of a Tesla Model 3 on a full charge. The context discusses general battery management, energy usage, and the effects of driving habits and conditions on the displayed range, but it does not specify the actual range values. For precise details on the range, you would need to refer to other sections of the manual or additional sources that specify the EPA-rated range or other standardized measurements for the Tesla Model 3.",
+        "sources": [
+          {
+            "source_id": 1,
+            "source_file": "tesla_model3_2023_manual.pdf",
+            "page": 191,
+            "section_type": "paragraph",
+            "score": 0.988
+          },
+          {
+            "source_id": 2,
+            "source_file": "tesla_model3_2023_manual.pdf",
+            "page": 235,
+            "section_type": "paragraph",
+            "score": 0.972
+          },
+          {
+            "source_id": 3,
+            "source_file": "tesla_model3_2023_manual.pdf",
+            "page": 181,
+            "section_type": "paragraph",
+            "score": 0.965
+          }
+        ],
+        "confidence": 0.975,
+        "error": null
+      },
+      "scores": {
+        "retrieved_correct_document": true,
+        "has_citation": true,
+        "has_answer": true,
+        "latency_acceptable": true,
+        "answer_not_hallucinated": true
+      }
+    },
+    {
+      "test_case": {
+        "id": "test_017",
+        "question": "Compare the oil capacity between Honda Civic and Toyota Camry",
+        "expected_document": "multiple",
+        "category": "comparison",
+        "difficulty": "hard"
+      },
+      "result": {
+        "success": true,
+        "latency": 14.373697519302368,
+        "answer": "For the 2023 Toyota Camry and 2022 Honda Civic, the engine oil capacities are as follows:\n\n**Toyota Camry (2023):**\n- **2.5 L 4-cylinder (A25A-FKS) engine:**\n  - With filter: 4.8 quarts (4.5 L, 4.0 Imp. qt.)\n  - Without filter: 4.4 quarts (4.2 L, 3.7 Imp. qt.)\n- **3.5 L V6 (2GR-FKS) engine:**\n  - With filter: 5.7 quarts (5.4 L, 4.8 Imp. qt.)\n  - Without filter: 5.6 quarts (5.3 L, 4.7 Imp. qt.) [Source 1, Page 578]\n\n**Honda Civic (2022):**\n- **Engine Oil Capacity:**\n  - With filter change: 3.7 quarts (3.5 L) [Source 2, Page 753]\n\nFrom this comparison, the Toyota Camry has a higher oil capacity in both its 4-cylinder and V6 engine options compared to the Honda Civic's engine.",
+        "sources": [
+          {
+            "source_id": 1,
+            "source_file": "toyota_camry_2023_manual.pdf",
+            "page": 578,
+            "section_type": "paragraph",
+            "score": 0.428
+          },
+          {
+            "source_id": 2,
+            "source_file": "honda_civic_2022_manual.pdf",
+            "page": 753,
+            "section_type": "paragraph",
+            "score": 0.084
+          },
+          {
+            "source_id": 3,
+            "source_file": "toyota_camry_2023_manual.pdf",
+            "page": 578,
+            "section_type": "paragraph",
+            "score": 0.977
+          },
+          {
+            "source_id": 4,
+            "source_file": "toyota_camry_2023_manual.pdf",
+            "page": 582,
+            "section_type": "paragraph",
+            "score": 0.841
+          }
+        ],
+        "confidence": 0.496,
+        "error": null
+      },
+      "scores": {
+        "retrieved_correct_document": true,
+        "has_citation": true,
+        "has_answer": true,
+        "latency_acceptable": true,
+        "answer_not_hallucinated": true
+      }
+    },
+    {
+      "test_case": {
+        "id": "test_018",
+        "question": "What are the warning signs of the Honda Civic steering defect?",
+        "expected_document": "honda_civic_2022_to_2025_safety_recall_report.pdf",
+        "category": "recall",
+        "difficulty": "medium"
+      },
+      "result": {
+        "success": true,
+        "latency": 7.5710129737854,
+        "answer": "The provided context does not explicitly list the warning signs of the Honda Civic steering defect. However, it mentions investigations into reports of \"sticky steering\" in the affected vehicles [Source 1, Page 6]. This term typically refers to a condition where the steering feels notchy or has increased resistance when turning the steering wheel. If you need information on specific symptoms or warning signs, I recommend consulting the vehicle's owner manual or contacting a Honda service center for more detailed guidance.",
+        "sources": [
+          {
+            "source_id": 1,
+            "source_file": "honda_civic_2022_to_2025_safety_recall_report.pdf",
+            "page": 6,
+            "section_type": "paragraph",
+            "score": 0.012
+          },
+          {
+            "source_id": 2,
+            "source_file": "honda_civic_2022_manual.pdf",
+            "page": 758,
+            "section_type": "paragraph",
+            "score": 0.002
+          },
+          {
+            "source_id": 3,
+            "source_file": "honda_civic_2022_to_2025_safety_recall_report.pdf",
+            "page": 7,
+            "section_type": "paragraph",
+            "score": 0.002
+          }
+        ],
+        "confidence": 0.005,
+        "error": null
+      },
+      "scores": {
+        "retrieved_correct_document": true,
+        "has_citation": true,
+        "has_answer": true,
+        "latency_acceptable": true,
+        "answer_not_hallucinated": true
+      }
+    },
+    {
+      "test_case": {
+        "id": "test_019",
+        "question": "Which vehicles use synthetic oil?",
+        "expected_document": "multiple",
+        "category": "specification",
+        "difficulty": "medium"
+      },
+      "result": {
+        "success": true,
+        "latency": 8.441397905349731,
+        "answer": "The 2021 Ford F-150 manuals specify the use of synthetic blend motor oils for different engine variants. Here are the details:\n\n1. **3.5L Hybrid Electric Vehicle (HEV)**:\n   - Recommended oil: Motorcraft\u00ae SAE 5W-30 Synthetic Blend Motor Oil [Source 1, Page 594].\n\n2. **3.5L EcoBoost\u2122**:\n   - Recommended oil: Motorcraft\u00ae SAE 5W-20 Synthetic Blend Motor Oil [Source 2, Page 591].\n\nThese specifications indicate that synthetic blend motor oils are recommended for these specific engine types in the 2021 Ford F-150.",
+        "sources": [
+          {
+            "source_id": 1,
+            "source_file": "ford_f150_2021_manual.pdf",
+            "page": 594,
+            "section_type": "paragraph",
+            "score": 0.881
+          },
+          {
+            "source_id": 2,
+            "source_file": "ford_f150_2021_manual.pdf",
+            "page": 591,
+            "section_type": "paragraph",
+            "score": 0.85
+          },
+          {
+            "source_id": 3,
+            "source_file": "ford_f150_2021_manual.pdf",
+            "page": 593,
+            "section_type": "paragraph",
+            "score": 0.849
+          }
+        ],
+        "confidence": 0.86,
+        "error": null
+      },
+      "scores": {
+        "retrieved_correct_document": false,
+        "has_citation": true,
+        "has_answer": true,
+        "latency_acceptable": true,
+        "answer_not_hallucinated": true
+      }
+    },
+    {
+      "test_case": {
+        "id": "test_020",
+        "question": "How many vehicles are affected by the Honda Civic steering recall?",
+        "expected_document": "honda_civic_2022_to_2025_safety_recall_report.pdf",
+        "category": "recall",
+        "difficulty": "easy"
+      },
+      "result": {
+        "success": true,
+        "latency": 6.325514793395996,
+        "answer": "The Honda Civic steering recall affects a total of 1,693,199 vehicles. This includes specific models from the years 2022 to 2025 [Source 1, Page 1].",
+        "sources": [
+          {
+            "source_id": 1,
+            "source_file": "honda_civic_2022_to_2025_safety_recall_report.pdf",
+            "page": 1,
+            "section_type": "paragraph",
+            "score": 0.91
+          },
+          {
+            "source_id": 2,
+            "source_file": "honda_civic_2022_to_2025_safety_recall_report.pdf",
+            "page": 7,
+            "section_type": "paragraph",
+            "score": 0.82
+          },
+          {
+            "source_id": 3,
+            "source_file": "honda_civic_2022_to_2025_safety_recall_report.pdf",
+            "page": 6,
+            "section_type": "paragraph",
+            "score": 0.451
+          }
+        ],
+        "confidence": 0.727,
+        "error": null
+      },
+      "scores": {
+        "retrieved_correct_document": true,
+        "has_citation": true,
+        "has_answer": true,
+        "latency_acceptable": true,
+        "answer_not_hallucinated": true
+      }
+    }
+  ]
+}

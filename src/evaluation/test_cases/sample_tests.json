@@ -1,0 +1,37 @@
+[
+  {
+    "id": "tc_001_oil_capacity",
+    "question": "What is the engine oil capacity for a 2022 Honda Civic 1.5L turbo?",
+    "expected_answer": "Drain and refill: 3.7 quarts (3.5 L). With filter change: 3.9 quarts (3.7 L). Dry fill: 4.2 quarts (4.0 L). Use SAE 0W-20 synthetic.",
+    "filters": { "make": "Honda", "model": "Civic", "year": 2022, "subsystem": "engine" },
+    "expected_sources": ["civic_2022_service_manual.pdf"]
+  },
+  {
+    "id": "tc_002_brake_pad_replacement",
+    "question": "What are the steps to replace front brake pads on a 2021 Ford F-150?",
+    "expected_answer": "Remove wheel, remove caliper (slide pin bolts 25 N·m), remove old pads, install new pads, compress piston, reinstall caliper, torque lug nuts to 150 ft·lbf, pump brake pedal.",
+    "filters": { "make": "Ford", "model": "F-150", "year": 2021, "subsystem": "brake" },
+    "expected_sources": ["f150_2021_brake_service.pdf"]
+  },
+  {
+    "id": "tc_003_coolant_flush",
+    "question": "What type of coolant does a 2023 Toyota Camry use and what is the system capacity?",
+    "expected_answer": "Toyota Super Long Life Coolant (pink). Capacity: 7.7 quarts (7.3 L). Flush every 60,000 miles or 5 years.",
+    "filters": { "make": "Toyota", "model": "Camry", "year": 2023, "subsystem": "cooling" },
+    "expected_sources": ["camry_2023_service_manual.pdf"]
+  },
+  {
+    "id": "tc_004_ev_battery_specs",
+    "question": "What is the battery capacity and voltage of a 2023 Tesla Model 3 Long Range?",
+    "expected_answer": "75 kWh battery, nominal 350 V DC. Supports up to 250 kW DC fast charging.",
+    "filters": { "make": "Tesla", "model": "Model 3", "year": 2023, "subsystem": "battery" },
+    "expected_sources": ["tesla_model3_2023_technical.pdf"]
+  },
+  {
+    "id": "tc_005_transmission_fluid",
+    "question": "What transmission fluid does a 2020 BMW 5 Series automatic use?",
+    "expected_answer": "BMW TF-70 transmission fluid. Check every 30,000 miles; change interval indicated by on-board computer.",
+    "filters": { "make": "BMW", "model": "5 Series", "year": 2020, "subsystem": "transmission" },
+    "expected_sources": ["bmw_5series_2020_service.pdf"]
+  }
+]
